@@ -1,0 +1,23 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+
+ .banner {
+   background: #212D40;
+   font-size: 30px;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   margin-bottom: 50px;
+ }

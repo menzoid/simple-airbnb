@@ -1,0 +1,25 @@
+<div class="banner">
+  <%= link_to "Home", flats_path %>
+  <%= link_to "+Add", new_flat_path %>
+</div>
+<div class="container overflow-hidden">
+  <div class="row gx-20 gy-20">
+    <% @flats.each do |flat| %>
+      <div class="card-flat col-4 p-0">
+        <div class="flat-details p-3">
+          <h3><%= link_to flat.name, flat_path(flat), class: 'stretched-link'%></h3>
+          <p><%= flat.address%></p>
+        </div>
+        <div class="flat-info p-3">
+          <p><i class="fas fa-user-friends"></i><%= flat.number_of_guests%></p>
+          <p><i class="fas fa-dollar-sign"></i><%= flat.price_per_night%></p>
+        </div>
+        <div class="flat-footer">
+          <p>More info</p>
+          <p>Edit</p>
+          <p>Remove</p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

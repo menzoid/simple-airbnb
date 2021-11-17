@@ -1,0 +1,38 @@
+<div id="bannerimage">
+  <p>Hello</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="flat-title">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class="flat-about">
+        <h4>A bit more about this flat</h4>
+        <p><%= @flat.description %></p>
+      </div>
+      <div class="details-flat">
+        <h4>Details</h4>
+        <div class="flat-info p-3">
+          <p><i class="fas fa-user-friends"></i><%= @flat.number_of_guests%></p>
+          <p><i class="fas fa-dollar-sign"></i><%= @flat.price_per_night%></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="booking-form">
+        <h5>Book this place!</h5>
+        <h6>From:</h6>
+        <h6>To:</h6>
+        <h6>Book</h6>
+      </div>
+      <div class="share d-flex justify-content-between">
+        <p>Share</p>
+        <p>IC IC IC IC</p>
+      </div>
+    </div>
+  </div>
+  <%= link_to "Edit", edit_flat_path %>
+</div>
